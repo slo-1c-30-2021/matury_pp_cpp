@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int licznik = 0;
+    int s;
+    ifstream f("cyfry.txt");
+    while(f>>s)
+    {
+        if (s%2==0)
+        {
+            licznik++;
+            cout<<s<<"\n";
+        }
+    }
+    cout<<"Wynik = "<<licznik<<"\n";
+}
